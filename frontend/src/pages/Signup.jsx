@@ -24,7 +24,7 @@ const Signup = () => {
       <div className="sm:w-full md:w-1/2 ">
         <form
           onSubmit={HandleSubmit}
-          className="flex flex-col gap-3 glass p-5 pb-6 rounded-lg "
+          className="flex flex-col gap-3 bg-slate-200 p-5 pb-6 rounded-lg "
         >
           <h2 className=" text-2xl font-bold text-primary pb-2">Sign Up</h2>
           <input
@@ -54,7 +54,7 @@ const Signup = () => {
               <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM12.735 14c.618 0 1.093-.561.872-1.139a6.002 6.002 0 0 0-11.215 0c-.22.578.254 1.139.872 1.139h9.47Z" />
             </svg>
             <input
-              type="text"
+              type="email"
               className="grow"
               name="email"
               value={inputs.email}
@@ -109,7 +109,7 @@ const Signup = () => {
           <div className="flex flex-col items-center w-full gap-2">
             <button
               type="submit"
-              className="btn btn-wide btn-secondary w-full"
+              className="btn btn-secondary w-full"
               disabled={loading}
             >
               {loading ? (

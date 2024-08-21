@@ -42,6 +42,7 @@ const useSignup = () => {
       }
       localStorage.setItem("token", data.token);
       setToken(data.token);
+      toast.success(data.message);
     } catch (error) {
       toast.error(error.message);
     } finally {
