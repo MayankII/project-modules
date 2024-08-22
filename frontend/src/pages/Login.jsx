@@ -60,7 +60,7 @@ const Login = () => {
           <div className="flex flex-col items-center gap-3">
             <button
               type="submit"
-              className="btn btn-wide btn-secondary w-full"
+              className="btn btn-secondary w-full"
               disabled={loading}
             >
               {loading ? (

@@ -1,4 +1,4 @@
-import jwt from "jwt";
+import jwt from "jsonwebtoken";
 
 const auth = async (req, res, next) => {
   const { token } = req.headers;
@@ -14,3 +14,4 @@ const auth = async (req, res, next) => {
     res.status(500).json({ error: "Server Error" });
   }
 };
+export default auth;
