@@ -11,7 +11,7 @@ const ModuleC = ({ video }) => {
   //fetching user progress for current video
   const fetchUserProgress = async () => {
     try {
-      const res = await axios.get(`/api/user-progress`, {
+      const res = await axios.get(`https://project-modules-backend.onrender.com/api/user-progress`, {
         headers: {
           token: localStorage.getItem("token"),
         },
@@ -42,7 +42,7 @@ const ModuleC = ({ video }) => {
       const progressPercentage = (currentTime / duration) * 100;
       setModuleProgress(Math.floor(progressPercentage));
       await axios.post(
-        `/api/user-progress/update`,
+        `https://project-modules-backend.onrender.com/api/user-progress/update`,
         {
           videoId: video._id,
           timestamp: currentTime,
