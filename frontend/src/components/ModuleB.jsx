@@ -65,7 +65,7 @@ const ModuleB = ({ video }) => {
       preload: "auto",
       sources: [
         {
-          src: video.filePath,
+          src:  `https://project-modules-backend.onrender.com${video.filePath}`,
           type: "video/mp4",
         },
       ],
