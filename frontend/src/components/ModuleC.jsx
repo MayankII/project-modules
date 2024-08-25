@@ -70,6 +70,9 @@ const ModuleC = ({ video }) => {
         },
       ],
     });
+
+    playerRef.current.controlBar.progressControl.hide();
+
     playerRef.current.ready(() => {
       fetchUserProgress();
     });
