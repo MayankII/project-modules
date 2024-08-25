@@ -32,7 +32,7 @@ const VideoLibrary = () => {
   useEffect(() => {
     const fetchVideos = async () => {
       try {
-        const res = await fetch(`/api/video/videos`, {
+        const res = await fetch(`https://project-modules-backend.onrender.com/api/video/videos`, {
           method: "GET",
           headers: {
             token: localStorage.getItem("token"),
